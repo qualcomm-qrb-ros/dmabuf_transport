@@ -1,12 +1,12 @@
-Source: ros-jazzy-dmabuf-transport
+Source: ros-jazzy-dmabuf-transport-test
 Section: misc
 Priority: optional
 Maintainer: Peng Wang <penwang@qti.qualcomm.com>
-Build-Depends: debhelper-compat (= 13), ros-jazzy-ament-cmake-auto, ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-lib-mem-dmabuf, ros-jazzy-rclcpp, ros-jazzy-sensor-msgs
-Homepage: https://github.com/qualcomm-qrb-ros/dmabuf_transport
+Build-Depends: debhelper-compat (=13), ros-jazzy-ament-cmake-auto, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-dmabuf-transport, ros-jazzy-pcl-conversions, ros-jazzy-rclcpp, ros-jazzy-rclcpp-components, ros-jazzy-sensor-msgs
+Homepage: 
 Standards-Version: 3.9.2
 
-Package: ros-jazzy-dmabuf-transport
+Package: ros-jazzy-dmabuf-transport-test
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-lib-mem-dmabuf, ros-jazzy-rclcpp, ros-jazzy-sensor-msgs
-Description: Type Adaption with Linux dma-buf
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcl-common1.14, libpcl-io1.14, ros-jazzy-dmabuf-transport, ros-jazzy-pcl-conversions, ros-jazzy-rclcpp, ros-jazzy-rclcpp-components, ros-jazzy-sensor-msgs
+Description: Test package for dmabuf transport
